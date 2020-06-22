@@ -13,26 +13,13 @@ class MiCard extends StatelessWidget {
         body: SafeArea(
           child: Container(
             color: Colors.teal,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Column(
               children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  width: 100.0,
-                  height: double.infinity,
-                ),
-                Container(
-                  color: Colors.yellow,
-                  height: 100.0,
-                  width: 100.0,
-                ),
-                Container(
-                  color: Colors.blue,
-                  height: double.infinity,
-                  width: 100.0,
-                ),
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage("images/ProfilePic.png"),
+                )
               ],
-              // mainAxisSize: ,
             ),
           ),
         ),
